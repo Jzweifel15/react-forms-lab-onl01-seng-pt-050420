@@ -17,7 +17,7 @@ class LoginForm extends React.Component {
     });
   }
 
-  handleSubmit = (e) => {
+  handleLogin = (e) => {
     e.preventDefault();
     const username = this.state.username;
     const password = this.state.password;
@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleLogin}>
         <div>
           <label>
             Username
